@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Web Development - Meta Scientia. Soluciones digitales responsivas y escalables para su negocio.">
+    <title>Web Development | Meta Scientia</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="international.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header id="main-header">
+        <div class="container header-container">
+            <!-- Logo removed from navbar -->
+
+            <nav id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#hero" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="index.html#services" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="index.html#projects" data-i18n="nav_projects">Proyectos</a></li>
+                    <li><a href="index.html#courses" data-i18n="nav_courses">Cursos</a></li>
+                    <li><a href="index.html#about" data-i18n="nav_about">Nosotros</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switcher" id="lang-switcher">
+                    <span id="lang-es" class="active">ES</span> | <span id="lang-en">EN</span>
+                </div>
+                <button id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- SERVICE HERO SECTION -->
+    <section class="service-hero hero-web">
+        <div class="container">
+            <div class="service-hero-content animate-fade-in">
+                <div class="service-icon-large">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h1 data-i18n="web_title">Web Development</h1>
+                <p class="service-tagline" data-i18n="web_tagline">Soluciones digitales responsivas y escalables para su
+                    negocio.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICE DETAILS SECTION -->
+    <section class="section-padding service-details">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main-content reveal animate-slide-up">
+                    <h2 data-i18n="web_about_title">Sobre este servicio</h2>
+                    <p data-i18n="web_about_text">En Meta Scientia desarrollamos plataformas web diseñadas
+                        específicamente para el ámbito científico y biotecnológico. Creamos sitios web profesionales,
+                        responsivos y técnicamente confiables que comunican investigación, fortalecen la presencia
+                        institucional y apoyan la divulgación científica y tecnológica.</p>
+
+                    <h3 data-i18n="web_offer_title">¿Qué ofrecemos?</h3>
+                    <ul class="service-features-list">
+                        <li class="feature-item reveal animate-slide-up reveal-delay-1">
+                            <div class="feature-header">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-i18n="web_feat_1">Diseño Enfocado a Ciencia y Biotecnología</span>
+                            </div>
+                            <div class="feature-content">
+                                <p data-i18n="web_feat_1_desc">Sitios web con identidad científica, visualmente
+                                    profesionales y alineados a estándares académicos, industriales y de innovación.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item reveal animate-slide-up reveal-delay-2">
+                            <div class="feature-header">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-i18n="web_feat_2">Desarrollo Responsivo y Escalable</span>
+                            </div>
+                            <div class="feature-content">
+                                <p data-i18n="web_feat_2_desc">Arquitecturas modernas que funcionan perfectamente en
+                                    cualquier dispositivo y pueden crecer junto a sus proyectos, laboratorios o
+                                    instituciones.</p>
+                            </div>
+                        </li>
+
+
+                        <li class="feature-item reveal animate-slide-up reveal-delay-4">
+                            <div class="feature-header">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-i18n="web_feat_3">Soluciones Personalizadas para Investigación</span>
+                            </div>
+                            <div class="feature-content">
+                                <p data-i18n="web_feat_3_desc">Sitios orientados a laboratorios, grupos de
+                                    investigación, empresas biotecnológicas, proyectos científicos, divulgación y
+                                    transferencia tecnológica.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item reveal animate-slide-up reveal-delay-1">
+                            <div class="feature-header">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-i18n="web_feat_4">Integración de Contenidos Especializados</span>
+                            </div>
+                            <div class="feature-content">
+                                <p data-i18n="web_feat_4_desc">Estructuración de información científica, secciones
+                                    técnicas, proyectos, publicaciones, certificaciones, patentes y evidencia de
+                                    impacto.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h3 data-i18n="web_benefits_title">Beneficios</h3>
+                    <p data-i18n="web_benefits_text">Convertimos su trabajo científico en una presencia digital sólida,
+                        clara y confiable. Un sitio web profesional mejora la visibilidad, refuerza credibilidad y
+                        facilita colaboración, posicionamiento institucional y alcance internacional.</p>
+
+
+
+                </div>
+
+                <aside class="service-sidebar reveal animate-slide-up">
+                    <div class="service-cta-box">
+                        <h3 data-i18n="sidebar_interested_title">¿Interesado en este servicio?</h3>
+                        <p data-i18n="sidebar_interested_text">Contáctanos para más información y cotizaciones
+                            personalizadas.</p>
+                        <a href="index.html#contact" class="btn btn-primary btn-block"
+                            data-i18n="sidebar_contact_btn">Contactar</a>
+                        <a href="https://wa.me/525582486550/?text=Hello,+I+would+like+to+obtain+more+information+about+MetaCientia's+services"
+                            target="_blank" class="btn btn-outline-dark btn-block">
+                            <i class="fab fa-whatsapp"></i> <span data-i18n="hero_cta_chat">WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <div class="related-services">
+                        <h4 data-i18n="sidebar_related_title">Servicios Relacionados</h4>
+                        <ul>
+                            <li><a href="plant-tissue-culture.html">Plant Tissue Culture</a></li>
+                            <li><a href="mushroom-production.html">Mushroom Production</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="./images/logo.png" alt="MetaScientia Logo" class="footer-logo">
+                <h3>MetaScientia</h3>
+                <p data-i18n="footer_slogan">Transformando la ciencia en soluciones.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_quicklinks">Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html#hero" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="index.html#services" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="index.html#courses" data-i18n="nav_courses">Cursos</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_legal">Legal</h4>
+                <ul>
+                    <li><a href="#" data-i18n="footer_privacy">Política de Privacidad</a></li>
+                    <li><a href="#" data-i18n="footer_terms">Términos de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p data-i18n="footer_copyright">&copy; 2023 Meta Scientia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="animations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
