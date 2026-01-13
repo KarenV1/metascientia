@@ -552,6 +552,16 @@ ul {
     .service-main-content {
         padding: 20px;
     }
+
+    .service-cta-box {
+        padding: 20px;
+    }
+
+    /* Ensure images don't overflow */
+    .service-main-content img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /* === Forzar alineación uniforme de las 2 columnas internas (left = titles, right = content) === */
@@ -672,9 +682,86 @@ ul {
         grid-template-columns: 1fr;
     }
 
-    .service-sidebar {
-        order: 2;
-        margin-top: 40px;
+    margin-top: 40px;
+}
+}
+
+/* --- MUSHROOM PAGE SPECIFIC CAROUSEL ADJUSTMENTS (HORIZONTAL FORMAT) --- */
+.mushroom-carousel .intl-carousel-item {
+    width: 600px;
+    height: 400px;
+}
+
+.mushroom-carousel .intl-carousel-item img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+/* Adjust offsets for wider items to maintain spacing */
+.mushroom-carousel .intl-carousel-item.position-1 {
+    transform: translate(calc(-50% + 350px), -50%) scale(0.9);
+}
+
+.mushroom-carousel .intl-carousel-item.position-2 {
+    transform: translate(calc(-50% + 550px), -50%) scale(0.7);
+}
+
+.mushroom-carousel .intl-carousel-item.position-3 {
+    transform: translate(calc(-50% + 700px), -50%) scale(0.5);
+}
+
+.mushroom-carousel .intl-carousel-item.position-7 {
+    transform: translate(calc(-50% - 350px), -50%) scale(0.9);
+}
+
+.mushroom-carousel .intl-carousel-item.position-6 {
+    transform: translate(calc(-50% - 550px), -50%) scale(0.7);
+}
+
+.mushroom-carousel .intl-carousel-item.position-5 {
+    transform: translate(calc(-50% - 700px), -50%) scale(0.5);
+}
+
+/* Responsive adjustments for the horizontal carousel */
+@media (max-width: 900px) {
+    .mushroom-carousel .intl-carousel-item {
+        width: 450px;
+        height: 300px;
+    }
+
+    .mushroom-carousel .intl-carousel-item img {
+        object-fit: contain;
+        border-radius: 16px;
+    }
+
+    .mushroom-carousel .intl-carousel-item.position-1 {
+        transform: translate(calc(-50% + 200px), -50%) scale(0.9);
+    }
+
+    .mushroom-carousel .intl-carousel-item.position-7 {
+        transform: translate(calc(-50% - 200px), -50%) scale(0.9);
+    }
+}
+
+@media (max-width: 600px) {
+    .mushroom-carousel .intl-carousel-item {
+        width: 300px;
+        height: 200px;
+    }
+
+    .mushroom-carousel .intl-carousel-item img {
+        object-fit: contain;
+        border-radius: 16px;
+    }
+
+    .mushroom-carousel .intl-carousel-item.position-1 {
+        transform: translate(calc(-50% + 120px), -50%) scale(0.9);
+    }
+
+    .mushroom-carousel .intl-carousel-item.position-7 {
+        transform: translate(calc(-50% - 120px), -50%) scale(0.9);
     }
 }
 

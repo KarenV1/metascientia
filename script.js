@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_contact: "Contacto",
             nav_book: "Reservar",
             hero_title: "Transformamos la ciencia en soluciones prácticas para México y el mundo",
-            hero_subtitle: "Investigación aplicada, capacitación especializada y desarrollo biotecnológico para instituciones, investigadores y estudiantes.",
+            hero_subtitle: "Cada servicio será respaldado por un equipo experto dedicado. El equipo se encuentra actualmente en proceso de selección e incorporación.",
             hero_cta_book: "Agendar Cita",
             hero_cta_chat: "Chat vía WhatsApp",
             card_biotech: "I+D Biotecnológico",
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             about_split_1: "QUI",
             about_split_2: "ÉNES SOMOS",
             about_title: "Quiénes Somos",
-            about_intro: "Meta Scientia, Empresa de Investigación e Innovación.",
+            about_intro: "<span class='subtitle-highlight'>Meta Scientia</span>, Empresa de Investigación e Innovación.",
             about_description: "Meta Scientia es una empresa dedicada al desarrollo de páginas web enfocadas en ciencias biológicas, biotecnología y enfoques de investigación científica en biotecnología. Mediante la colaboración y el desarrollo de habilidades, Meta Scientia transforma ideas científicas en resultados prácticos e impactantes.",
             about_legal: "La empresa está registrada oficialmente ante el Instituto Mexicano de la Propiedad Industrial (IMPI) con el número de registro 2945214, Clase 42, y abarca servicios científicos y tecnológicos; servicios de investigación y diseño; análisis e investigación industrial; diseño industrial; servicios de control de calidad y autenticación; y diseño y desarrollo de hardware y software.",
             about_extra_title: "Acerca de Meta Scientia",
@@ -79,12 +79,12 @@ document.addEventListener('DOMContentLoaded', () => {
             projects_subtitle: "Explorando las fronteras de la ciencia.",
             courses_title: "Cursos y Talleres",
             courses_subtitle: "Empoderando a la próxima generación de científicos.",
-            course_1_badge: "En Línea",
-            course_1_title: "PCR y Biología Molecular",
+            course_1_badge: "Híbrido / En línea",
+            course_1_title: "Cultivo de Tejidos Vegetales",
             duration_label_1: "Duración: ",
             duration_label_11: " 4 semanas",
-            course_1_desc: "Domina los fundamentos de la Reacción en Cadena de la Polimerasa.",
-            enroll_btn: "Inscribirse Ahora",
+            course_1_desc: "Aprende los principios y técnicas prácticas del cultivo de tejidos vegetales, incluyendo preparación de medios, esterilización, inducción de callos y micropropagación para aplicaciones en investigación e industria.",
+            enroll_btn: "Inscríbete próximamente",
             course_2_badge: "Híbrido",
             course_2_title: "Masterclass de Redacción Científica",
             duration_label_2: "Duración: ",
@@ -409,16 +409,16 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_contact: "Contact",
             nav_book: "Book",
             hero_title: "We transform science into practical solutions for Mexico and the world",
-            hero_subtitle: "Applied research, specialized training, and biotechnological development for institutions, researchers, and students.",
+            hero_subtitle: "Each service will be supported by a dedicated expert team. Team recruitment and onboarding are underway.",
             hero_cta_book: "Book a Consultation",
             hero_cta_chat: "WhatsApp Chat",
             card_biotech: "Biotech R&D",
             card_training: "Specialized Training",
             card_sustainable: "Sustainable Solutions",
-            about_split_1: "WHO",
+            about_split_1: "<span style='color: #ffffff;'>WHO</span>",
             about_split_2: " WE ARE",
             about_title: "Who We Are",
-            about_intro: "Meta Scientia Research & Innovation Company",
+            about_intro: "<span class='subtitle-highlight'>Meta Scientia</span> Research & Innovation Company",
             about_description: "Meta Scientia is an innovative research and development company dedicated to expanding scientific capacity, developing advanced laboratory systems, and delivering biotechnology-driven solutions. We specialize in plant tissue culture, mushroom production, herbal product development, molecular docking, bioinformatics, and publication support with research guidance. Through collaboration and skill development, Meta Scientia transforms scientific ideas into practical, impactful outcomes.",
             about_legal: "The company is officially registered with the Mexican Institute of Industrial Property (IMPI) under Registration No. 2945214, Class 42, covering scientific and technological services; research and design services; industrial analysis and research; industrial design; quality control and authentication services; and the design and development of hardware and software.",
             about_extra_title: "About Meta Scientia",
@@ -455,12 +455,12 @@ document.addEventListener('DOMContentLoaded', () => {
             projects_subtitle: "Exploring the frontiers of science.",
             courses_title: "Courses & Workshops",
             courses_subtitle: "Empowering the next generation of scientists.",
-            course_1_badge: "Online",
-            course_1_title: "PCR & Molecular Biology",
+            course_1_badge: "Hybrid / Online",
+            course_1_title: "Plant Tissue Culture",
             duration_label_1: "Duration:",
             duration_label_11: " 4 weeks",
-            course_1_desc: "Master the fundamentals of Polymerase Chain Reaction.",
-            enroll_btn: "Enroll Now",
+            course_1_desc: "Learn the principles and hands-on techniques of plant tissue culture, including media preparation, sterilization, callus induction, and micropropagation for research and industry applications.",
+            enroll_btn: "Enroll Coming Soon",
             course_2_badge: "Hybrid",
             course_2_title: "Scientific Writing Masterclass",
             duration_label_2: "Duration:",
@@ -781,6 +781,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function setLanguage(lang) {
         // Save to localStorage
         localStorage.setItem('preferredLanguage', lang);
+
+        // Update Body Class for CSS Specifics
+        document.body.classList.remove('lang-es', 'lang-en');
+        document.body.classList.add('lang-' + lang);
 
         const elements = document.querySelectorAll('[data-i18n]');
         elements.forEach(el => {

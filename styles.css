@@ -889,6 +889,9 @@ img {
 
 .course-body {
     padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .course-body p {
@@ -898,7 +901,7 @@ img {
 }
 
 .course-body .btn {
-    margin-top: 15px;
+    margin-top: auto;
 }
 
 .testimonials-container {
@@ -1691,8 +1694,24 @@ img {
     margin-bottom: 30px;
     line-height: 1.4;
     position: relative;
-    left: -180px;
+    left: -226px;
     /* Match title extension */
+}
+
+.subtitle-highlight {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/* English Specific Adjustments for Alignment */
+body.lang-en .about-split-title {
+    left: -221px;
+    /* Adjusted for shorter 'WHO' */
+}
+
+body.lang-en .about-subtitle-new {
+    left: -226px;
+    /* Adjusted for longer 'Meta Scientia' */
 }
 
 /* Text Content */
@@ -1938,5 +1957,25 @@ img {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+}
+/* === GLOBAL RESPONSIVE UTILITIES === */
+/* Prevent horizontal overflow */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Ensure all images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive touch targets */
+@media (max-width: 768px) {
+    button, a.btn, input[type="submit"], input[type="button"] {
+        min-height: 44px;
+        min-width: 44px;
     }
 }
