@@ -415,7 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card_biotech: "Biotech R&D",
             card_training: "Specialized Training",
             card_sustainable: "Sustainable Solutions",
-            about_split_1: "<span style='color: #ffffff;'>WHO</span>",
+            about_split_1: "<span class='title-white'>WHO</span>",
             about_split_2: " WE ARE",
             about_title: "Who We Are",
             about_intro: "<span class='subtitle-highlight'>Meta Scientia</span> Research & Innovation Company",

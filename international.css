@@ -500,11 +500,18 @@ ul {
     }
 
     .service-hero {
-        padding: 60px 0 80px;
+        padding: 100px 20px 60px;
     }
 
     .service-hero h1 {
         font-size: 2rem;
+    }
+
+    .service-icon-large i,
+    .service-icon-large .icon-mask {
+        font-size: 2rem;
+        padding: 12px;
+        margin-bottom: 1.5rem;
     }
 
     .service-main-content {
@@ -747,21 +754,33 @@ ul {
 
 @media (max-width: 600px) {
     .mushroom-carousel .intl-carousel-item {
-        width: 300px;
-        height: 200px;
+        width: 280px;
+        height: 187px;
     }
 
     .mushroom-carousel .intl-carousel-item img {
         object-fit: contain;
-        border-radius: 16px;
+        border-radius: 12px;
     }
 
     .mushroom-carousel .intl-carousel-item.position-1 {
-        transform: translate(calc(-50% + 120px), -50%) scale(0.9);
+        transform: translate(calc(-50% + 160px), -50%) scale(0.75);
+        opacity: 0.8;
     }
 
     .mushroom-carousel .intl-carousel-item.position-7 {
-        transform: translate(calc(-50% - 120px), -50%) scale(0.9);
+        transform: translate(calc(-50% - 160px), -50%) scale(0.75);
+        opacity: 0.8;
+    }
+
+    .mushroom-carousel .intl-carousel-item.position-2 {
+        transform: translate(calc(-50% + 280px), -50%) scale(0.5);
+        opacity: 0.5;
+    }
+
+    .mushroom-carousel .intl-carousel-item.position-6 {
+        transform: translate(calc(-50% - 280px), -50%) scale(0.5);
+        opacity: 0.5;
     }
 }
 

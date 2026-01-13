@@ -1959,9 +1959,11 @@ body.lang-en .about-subtitle-new {
         gap: 30px;
     }
 }
+
 /* === GLOBAL RESPONSIVE UTILITIES === */
 /* Prevent horizontal overflow */
-html, body {
+html,
+body {
     overflow-x: hidden;
     max-width: 100%;
 }
@@ -1974,8 +1976,57 @@ img {
 
 /* Responsive touch targets */
 @media (max-width: 768px) {
-    button, a.btn, input[type="submit"], input[type="button"] {
+
+    button,
+    a.btn,
+    input[type="submit"],
+    input[type="button"] {
         min-height: 44px;
         min-width: 44px;
+    }
+}
+
+/* Small mobile fix for Who We Are section */
+@media (max-width: 480px) {
+    .about-layout-container {
+        flex-direction: column;
+    }
+
+    .about-image-column {
+        flex: 0 0 200px;
+        min-height: 200px;
+    }
+
+    .about-content-column {
+        padding: 30px 15px;
+        flex: 1;
+    }
+
+    .about-split-title {
+        font-size: 1.8rem;
+        left: 0 !important;
+        position: static;
+    }
+
+    .about-subtitle-new {
+        font-size: 1rem;
+        left: 0 !important;
+        position: static;
+    }
+
+    .about-text-content {
+        font-size: 0.9rem;
+    }
+
+    /* Make title completely black on mobile */
+    body .about-content-column .about-split-title .title-white,
+    body .about-content-column .about-split-title .title-black,
+    body .about-split-title span.title-white,
+    body .about-split-title span.title-black,
+    body.lang-en .about-split-title .title-white,
+    body.lang-es .about-split-title .title-white {
+        color: #000000 !important;
+        text-shadow: none !important;
+        font-weight: 900 !important;
     }
 }
